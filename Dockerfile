@@ -12,8 +12,8 @@ LABEL autogen="no" \
       
 MAINTAINER Anne Fouilloux <annefou@geo.uio.no>
 
-RUN apt-get update -y && apt-get install -y wget git cmake \
-    build-essential gfortran gdb strace m4 python subversion
+RUN apt-get update -y && apt-get install -y wget git cmake liblapack-dev \
+    build-essential gfortran gdb strace m4 python subversion libxml-libxml-perl
 
 RUN wget -q http://www.mpich.org/static/downloads/3.1.4/mpich-3.1.4.tar.gz \
     && tar xf mpich-3.1.4.tar.gz \
