@@ -14,7 +14,7 @@ MAINTAINER Anne Fouilloux <annefou@geo.uio.no>
 
 RUN apt-get update -y && apt-get install -y wget git cmake liblapack-dev \
     build-essential gfortran gdb strace m4 python subversion \
-    libxml2-utils libxml-libxml-perl csh
+    libxml2-utils libxml-libxml-perl csh vim nano
 
 RUN wget -q http://www.mpich.org/static/downloads/3.1.4/mpich-3.1.4.tar.gz \
     && tar xf mpich-3.1.4.tar.gz \
